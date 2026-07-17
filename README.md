@@ -4,7 +4,7 @@ A high-performance, cross-platform desktop audio mixing application built from s
 ## Description
 A desktop DJ application enabling real-time audio manipulation and mixing across dual decks. This project is built with Modern C++ and the JUCE framework, bypassing the default operating system components to render a fully custom user interface. To handle demanding audio calculations without freezing the display, the application employs a multi-threaded architecture that completely separates audio processing from UI rendering.
 
-![Live](gif link)
+![Live](https://github.com/ueide/DJ-Application/blob/main/assets/DJ_App_gif.gif)
 
 ## Features
 - **Multi-Threaded Waveform Generation:** The application utilises an asynchronous background thread (`AudioThumbnailCache`) to analyse heavy audio files. This prevents the main UI thread from lagging or dropping frames while rendering interactive waveforms during intensive audio playback.
@@ -13,7 +13,7 @@ A desktop DJ application enabling real-time audio manipulation and mixing across
 
 - **Real-Time DSP Engine:** Features a custom-mapped 3-band EQ frequency isolation filter and a smooth logarithmic crossfader. The mathematical curves guarantee transparent, click-free audio transitions during live mixing.
 
-- **State and Playlist Persistence:** Implementation of automatic data serialization using `juce::JSON`. User playlist data, active track selections, and custom mixer layouts are verified and saved locally, ensuring seamless session recovery when the app restarts.
+- **State and Playlist Persistence:** Implementation of automatic data serialization using `juce::JSON`. User playlist data, active track selections, and custom mixer layouts are verified and saved locally, ensuring seamless session recovery upon app restart.
 
 - **Decoupled Architecture:** Component communication relies entirely on modern C++ lambda callbacks (such as `onLeftEQChanged`). This pattern eliminates tight dependencies between the interface controls and the underlying audio engine, making the codebase highly scalable and easy to test.
 
