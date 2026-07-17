@@ -18,7 +18,7 @@ A desktop DJ application enabling real-time audio manipulation and mixing across
 - **Decoupled Architecture:** Component communication relies entirely on modern C++ lambda callbacks (such as `onLeftEQChanged`). This pattern eliminates tight dependencies between the interface controls and the underlying audio engine, making the codebase highly scalable and easy to test.
 
 ## Live Demo
-You can [access the live presentation page here](link)
+You can [access the live presentation page here](https://ueide.github.io/DJ-Application/)
 
 ## Technology Stack
 - **Core Language:** Modern C++ (C++17 / C++20)
